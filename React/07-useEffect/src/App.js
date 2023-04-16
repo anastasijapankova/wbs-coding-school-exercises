@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+// 07-useEffect (01,02,03,04,05)
+import { Counter } from './components/counter';
+import { UserGreeting } from './components/usegreeting';
+import { CurrentTime } from './components/currenttime'
+import { Timer } from './/components/timer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Counter />
+      <UserGreeting />
+      <CurrentTime />
+      <Timer />
     </div>
   );
 }
