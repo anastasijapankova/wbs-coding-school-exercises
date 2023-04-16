@@ -1,0 +1,10 @@
+/* // 06-useState (05) */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
