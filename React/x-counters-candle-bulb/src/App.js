@@ -7,8 +7,6 @@ function App() {
     <div className="App">
       <Counters />
       <Bulb />
-
-
     </div>
   );
 }
