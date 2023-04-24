@@ -1,0 +1,13 @@
+/* 10-useContext (01) */
+
+.dark {
+  color: white;
+  background-color: black;
+  padding: 25px;
+}
+
+.light {
+  color: black;
+  background-color: white;
+  padding: 25px;
+}
