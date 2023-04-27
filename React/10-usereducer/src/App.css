@@ -1,0 +1,7 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 5px;
+  margin: auto;
+}
