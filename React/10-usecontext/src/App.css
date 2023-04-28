@@ -11,3 +11,17 @@
   background-color: white;
   padding: 25px;
 }
+
+.userLogin {
+  color: white;
+  font-size: 2rem;
+  background-color: lightcoral;
+  padding: 25px;
+}
+
+.language {
+  color: white;
+  font-size: 2rem;
+  background-color: lightseagreen;
+  padding: 25px;
+}
