@@ -1,6 +1,7 @@
 .counter {
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 100px;
   gap: 5px;
   margin: auto;
@@ -16,13 +17,35 @@
 }
 
 .light {
-  background-color: white;
-  color: black;
+  background-color: lightblue;
+  color: #5C4033;
   padding: 1rem;
 }
 
 .dark {
-  background-color: black;
-  color: white;
+  background-color: #5C4033;
+  color: lightblue;
   padding: 1rem;
+}
+
+.todo {
+  background-color: peachpuff;
+  color: olive;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 5px;
+  margin: auto;
+  padding: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.action {
+  width: 120px
 }
