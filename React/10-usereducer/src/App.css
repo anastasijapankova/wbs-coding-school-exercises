@@ -5,3 +5,24 @@
   gap: 5px;
   margin: auto;
 }
+
+.theme {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
