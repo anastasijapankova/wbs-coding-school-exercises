@@ -1,0 +1,158 @@
+* {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  margin: 5rem 20rem 5rem 20rem;
+  text-align: center;
+  /* border: 2px solid #4CAF50; */
+  /* box-shadow: 2px 2px olive, -.3em .2em .4em .4em olive; */
+  box-shadow: 2px 2px #af724c, -0.1em 0.1em 0.4em 0.2em #af614c;
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.state {
+  margin-top: 5rem;
+}
+
+.team_div {
+  width: auto;
+  border: 3px solid #5555552a;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 50px;
+  /* box-shadow: 12px 12px 2px 1px #4caf4f13; */
+  /* box-shadow: 2px 2px #4CAF50, -.3em .2em .4em .1em #4CAF50; */
+}
+
+.axios {
+  max-width: 80%;
+  height: 30vh;
+}
+
+.coolstuff {
+  height: 15vh;
+}
+
+.App h1 {
+  font-size: 1.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App h2,
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+}
+
+.App h4 {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.App li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.App ol {
+  margin-bottom: 5rem;
+}
+
+.App img {
+  width: 75%;
+}
+
+/* BUTTONS */
+.btn_green {
+  /* background-color: #4CAF50; */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2rem 1rem 5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px #4caf50, -0.1em 0.1em 0.4em 0.2em #4caf50;
+}
+
+.btn_blue {
+  /* background-color: #008CBA; */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2rem 1rem 5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px #008cba, -0.1em 0.1em 0.4em 0.2em #008cba;
+}
+
+.btn_red {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2rem 1rem 5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px #f44336, -0.1em 0.1em 0.4em 0.2em #f44336;
+}
+
+.btn_gray {
+  /* background-color: #555555; */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem 1rem 5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px #555555, -0.1em 0.1em 0.4em 0.2em #555555;
+}
+
+.cooltext {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  padding-left: 5px;
+  min-width: 300px;
+  min-height: 30px;
+  box-shadow: 2px 2px #4caf50, -0.1em 0.1em 0.4em 0.2em #4caf50;
+}
+
+/* .just_btn {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2rem 1rem 5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px #555555, -.1em .1em .4em .2em #555555;
+  background-image: linear-gradient(90deg, #555555 0%, #555555 19%, #4CAF50 50%, #555555 100%);
+  animation:slidebg 5s linear infinite;
+}
+  
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+} */
+
+.App button:hover {
+  transition: all 0.15s;
+  opacity: 60%;
+  cursor: pointer;
+  transition: all 0.35s;
+}
