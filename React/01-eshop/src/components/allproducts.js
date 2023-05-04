@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { data } from './01-eshop-data'
 import { FaRegStar } from 'react-icons/fa'
-import { Button } from './button';
 
-export function Product() {
+export function AllProducts(props) {
+
+    const handleIncrease = () => {
+        props.onClick();
+    }
 
     return (
         <div className='products'>
@@ -17,7 +20,7 @@ export function Product() {
                     <img src={data.image} />
                     <div className="price-button">
                         <p>{data.price} €</p>
-                        <Button />
+                        <button onClick={handleIncrease}>Buy</button>
                     </div >
                 </div>
             ))

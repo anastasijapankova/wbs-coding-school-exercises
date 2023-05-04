@@ -1,0 +1,23 @@
+.counter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: lightcyan;
+}
+
+.counter-h {
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mouse {
+  text-align: center;
+  background-color: rosybrown;
+  padding: 10px;
+}

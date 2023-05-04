@@ -19,7 +19,7 @@ Based on the data array below, you need to build the homepage of an eshop sellin
    4.  Average Rating
    5.  "add to cart" button -->
    
-   Once the button pressed the number at the cart icon at the header should increase by one.
+   <!-- Once the button pressed the number at the cart icon at the header should increase by one. -->
 
 <!-- 4. Build a card container component. It should contain: 
    1. a title at the top
@@ -29,8 +29,8 @@ Based on the data array below, you need to build the homepage of an eshop sellin
 
 
 <!-- 5. Using the card container component add to the home page a top selling products component with title "Best Sellers" -->
-6. Using the card container component add to the home page the most popular products (best average) with title "Most Popular" based on the average rating
-7. Using the card container component add to the home page all products with title "All Products"
+<!-- 6. Using the card container component add to the home page the most popular products (best average) with title "Most Popular" based on the average rating -->
+<!-- 7. Using the card container component add to the home page all products with title "All Products" -->
 8. When the user types some text in the search input element at the header, all product containers should not be shown except the one with all the products. This component should render only the products that their name or description contains the search text
 
 9. Modify the product card and render the first 100 characters of the product description just below the product image
