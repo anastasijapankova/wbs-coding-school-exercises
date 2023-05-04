@@ -1,6 +1,7 @@
 import './App.css';
 import CounterComponent from './components/counter'
 import MousePosition from './components/mouse';
+import LocalStorage from './components/storage'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <CounterComponent />
       <MousePosition />
+      <LocalStorage />
     </div>
   );
 }
