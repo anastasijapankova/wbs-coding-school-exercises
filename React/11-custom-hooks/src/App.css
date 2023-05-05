@@ -27,3 +27,10 @@
   background-color: lightseagreen;
   padding: 10px;
 }
+
+.fetch {
+  text-align: center;
+  background-color: lightsalmon;
+  padding: 10px;
+  list-style: none;
+}

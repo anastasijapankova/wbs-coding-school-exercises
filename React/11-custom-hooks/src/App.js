@@ -2,6 +2,7 @@ import './App.css';
 import CounterComponent from './components/counter'
 import MousePosition from './components/mouse';
 import LocalStorage from './components/storage'
+import Fetch from './components/fetch'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <CounterComponent />
       <MousePosition />
       <LocalStorage />
+      <Fetch />
     </div>
   );
 }
