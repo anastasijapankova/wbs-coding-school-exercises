@@ -41,3 +41,10 @@ h1 {
     background-color: orange;
     border-radius: 30px;
 }
+
+.checkout-page {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 10px;
+}
