@@ -3,6 +3,8 @@ import { BestSellers } from "./bestsellers"
 import { MostPopular } from "./mostpopular"
 
 export function Products(props) {
+
+
     return (
         <>
             <div className="card-container">

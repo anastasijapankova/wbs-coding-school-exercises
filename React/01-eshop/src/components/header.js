@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { Search } from "./search"
-
 import { FaShoppingCart } from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
+import '../App.css'
 
 
 
 export function Header(props) {
 
-
     return (
         <header>
             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1200px-Apple_logo_grey.svg.png' alt='' />
             <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Categories</a></li>
-                    <li><a>Deals</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
+                <NavLink className="navigation" to="/">Home</NavLink>
+                <NavLink className="navigation">Categories</NavLink>
+                <NavLink className="navigation">Deals</NavLink>
+                <NavLink className="navigation" to="/contact">Contact</NavLink>
+                <NavLink className="navigation" to="/add-new-product">Add New Product</NavLink>
             </nav>
             <div className="search">
                 <input type="search" placeholder="Search apple.com ..." />

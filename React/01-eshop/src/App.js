@@ -12,11 +12,15 @@ function App() {
     setCart(cart + 1)
   }
 
-
   return (
     <div >
       <Header cart={cart} />
       <Products onClick={increase} />
+
+
+
+
+
     </div >
   );
 }
