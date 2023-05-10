@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { Search } from "./search"
 import { FaShoppingCart } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import '../App.css'
+import { CartContext } from './cartContext'
 
 
 
-export function Header(props) {
+export function Header({ children }) {
+
+    const { cart } = useContext(CartContext);
 
     return (
         <header>
@@ -24,7 +27,7 @@ export function Header(props) {
             </div>
             <div class="shopping">
                 <FaShoppingCart className='carticon' />
-                <div className='itemsnumber'>{props.cart}</div>
+                <div className='itemsnumber'>{cart}</div>
             </div>
 
         </header>

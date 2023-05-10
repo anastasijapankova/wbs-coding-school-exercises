@@ -23,7 +23,7 @@
    <!-- 5. A Subject field -->
    <!-- 6. A message textarea -->
    <!-- 7. A send button -->
-   8. When the user clicks the send button, you should render a 'thank you' modal window containing the information that the user has entered along with a 'thank you' message 
+   <!-- 8. When the user clicks the send button, you should render a 'thank you' modal window containing the information that the user has entered along with a 'thank you' message  -->
 <!-- 3. Create an add product page that contains the following fields: -->
    <!-- 1. Product name -->
    <!-- 2. Product description (textarea) -->
@@ -44,4 +44,4 @@
 
 
 
-* If the code from part I is not available that just create a header with menu items and implement the tasks as described here.
+<!-- * If the code from part I is not available that just create a header with menu items and implement the tasks as described here. -->
