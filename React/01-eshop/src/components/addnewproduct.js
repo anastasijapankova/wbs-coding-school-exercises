@@ -28,32 +28,47 @@ export function AddNewProduct() {
                             <option value="smart-watch">Smartwatch</option>
                         </select>
                     </div>
-                    <div className='input-field'>
+
+                    <div className='input-field-featured'>
                         <label for="featured">Product is featured</label>
                         <input type="checkbox" id="featured" name="featured" value="featured" />
                     </div>
-                    <div className='input-field'>
-                        <label for="colours">Colours</label>
-                        <div className='input-field'>
-                            <input type="checkbox" id="pink" name="pink" value="pink" />
-                            <label for="pink">Pink</label>
-                            <input type="checkbox" id="red" name="red" value="red" />
-                            <label for="red">Red</label>
-                            <input type="checkbox" id="black" name="black" value="black" />
-                            <label for="black">Black</label>
-                            <input type="checkbox" id="skyblue" name="skyblue" value="skyblue" />
-                            <label for="skyblue">Sky Blue</label>
-                            <input type="checkbox" id="white" name="white" value="white" />
-                            <label for="white">White</label>
-                            <input type="checkbox" id="golden" name="golden" value="golden" />
-                            <label for="golden">Golden</label>
+                    <div className='input-field-colours'>
+                        <label>Colours</label>
+                        <div className='colours'>
+                            <div>
+                                <input type="checkbox" ></input>
+                                <label>Pink</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" ></input>
+                                <label>Red</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" ></input>
+                                <label>Black</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" ></input>
+                                <label>Sky Blue</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" ></input>
+                                <label>White</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" ></input>
+                                <label>Golden</label>
+                            </div>
                         </div>
+
+
                         {/* Save Button */}
                     </div>
                 </form>
             </div >
 
-        </div>
+        </div >
     )
 }
 

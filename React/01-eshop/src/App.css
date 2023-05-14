@@ -99,7 +99,6 @@ nav {
 
 .card-container {
   padding: 50px 100px;
-
 }
 
 .products {
@@ -183,24 +182,82 @@ nav {
 }
 
 .form {
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
   padding: 20px;
+  align-items: center;
 }
 
 .input-field {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
+  width: 500px;
 }
+
+#salutation,
+#department,
+#category {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
 
 .input-field input {
   padding: 0 20px;
+  width: 300px;
   height: 40px;
   border-radius: 20px;
   border: 0.1px solid grey;
+}
+
+
+#message {
+  height: 200px;
+}
+
+input[type='checkbox'] {
+  height: 20px;
+}
+
+.input-field-featured[type='checkbox'] {
+  height: 20px;
+  justify-content: flex-start;
+}
+
+.input-field-colours {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 500px;
+}
+
+.input-field-colours label {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input-field-featured {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 500px;
+}
+
+.input-field-featured input {
+  display: flex;
+  align-self: center;
+}
+
+.colours div {
+  display: flex;
+  gap: 10px;
 }
 
 .send-button {
