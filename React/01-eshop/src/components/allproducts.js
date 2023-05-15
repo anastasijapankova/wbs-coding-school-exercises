@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from 'react'
-import { data } from './01-eshop-data'
+import React, { useState, useEffect, useContext } from 'react'
+import { CartContext } from './cartContext'
 import { FaRegStar } from 'react-icons/fa'
+
 
 export function AllProducts(props) {
 
+    const { products } = useContext(CartContext)
     const handleIncrease = () => {
         props.onClick();
     }
 
+    console.log('All products=', products)
     return (
         <div className='products'>
-            {data.map((data) => (
+            {products.map((data) => (
                 <div className='card'>
                     <div className='card-head'>
                         <p className='new'>NEW</p>

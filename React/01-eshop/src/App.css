@@ -243,6 +243,10 @@ input[type='checkbox'] {
   justify-content: flex-start;
 }
 
+.input-field-colours button {
+  align-self: center;
+}
+
 .input-field-featured {
   display: flex;
   justify-content: flex-start;

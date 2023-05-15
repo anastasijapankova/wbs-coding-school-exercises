@@ -12,7 +12,7 @@ export const data = [
     },
     {
         id: 2,
-        name:"Apple iPhone X (256GB) - Space Grey",
+        name: "Apple iPhone X (256GB) - Space Grey",
         descr: "With gorgeous all-glass design with a beautiful 5.8-inch Super Retina display, A11 Bionic chip, wireless charging and an improved rear camera with dual optical image stabilization",
         ram: "256 GB",
         image: "https://m.media-amazon.com/images/I/513dDPynP6L._SL1000_.jpg",
