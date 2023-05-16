@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Search } from "./search"
 import { FaShoppingCart } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
@@ -11,6 +11,12 @@ export function Header({ children }) {
 
     const { cart } = useContext(CartContext);
 
+    const [searchText, setSearchText] = useState('');
+
+    const handleSearch = (event) => {
+        setSearchText(event.target.value);
+    };
+
     return (
         <header>
             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1200px-Apple_logo_grey.svg.png' alt='' />
@@ -22,7 +28,7 @@ export function Header({ children }) {
                 <NavLink className="navigation" to="/add-new-product">Add New Product</NavLink>
             </nav>
             <div className="search">
-                <input type="search" placeholder="Search apple.com ..." />
+                <input type="search" placeholder="Search apple.com ..." value={searchText} onChange={handleSearch} />
                 <button><Search /></button>
             </div>
             <div class="shopping">

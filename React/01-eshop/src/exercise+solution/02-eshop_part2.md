@@ -40,7 +40,7 @@
    <!-- 4. Sky blue -->
    <!-- 5. White -->
    <!-- 6. Golden -->
-   7. A save button. When clicked the product should be added to the products array. (You should import it in this file as well beside the homepage)
+   <!-- 7. A save button. When clicked the product should be added to the products array. (You should import it in this file as well beside the homepage) -->
 
 
 

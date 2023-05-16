@@ -33,7 +33,7 @@ Based on the data array below, you need to build the homepage of an eshop sellin
 <!-- 7. Using the card container component add to the home page all products with title "All Products" -->
 8. When the user types some text in the search input element at the header, all product containers should not be shown except the one with all the products. This component should render only the products that their name or description contains the search text
 
-9. Modify the product card and render the first 100 characters of the product description just below the product image
+<!-- 9. Modify the product card and render the first 100 characters of the product description just below the product image -->
 10. Add a toggle button above the "All Products" component which toggles the rendering of the all products between horizontal scroll and with flex-wrap
 
 

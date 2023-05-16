@@ -10,9 +10,11 @@ export function AllProducts(props) {
         props.onClick();
     }
 
+
+
     console.log('All products=', products)
     return (
-        <div className='products'>
+        <div className='products' style={props.productContainerStyle} >
             {products.map((data) => (
                 <div className='card'>
                     <div className='card-head'>
@@ -21,6 +23,7 @@ export function AllProducts(props) {
                     </div>
                     <h1 className='card-name'>{data.name}</h1>
                     <img src={data.image} />
+                    <p maxlength="100">{data.descr.slice(0, 100)} </p>
                     <div className="price-button">
                         <p>{data.price} €</p>
                         <button onClick={handleIncrease}>Buy</button>

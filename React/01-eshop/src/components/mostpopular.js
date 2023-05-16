@@ -11,7 +11,7 @@ export function MostPopular(props) {
     }
 
     return (
-        <div className='products'>
+        <div className='products' style={props.productContainerStyle}>
             {filteredMostPopular.map((data) => (
                 <div className='card'>
                     <div className='card-head'>
@@ -20,6 +20,7 @@ export function MostPopular(props) {
                     </div>
                     <h1 className='card-name'>{data.name}</h1>
                     <img src={data.image} />
+                    <p>{data.descr.slice(0, 100)} </p>
                     <div className="price-button">
                         <p>{data.price} €</p>
                         <button onClick={handleIncrease}>Buy</button>
