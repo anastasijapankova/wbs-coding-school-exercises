@@ -1,0 +1,359 @@
+<!-- 
+01A 
+Use querySelector to select the first paragraph element on a page and change its text to "Hello World!" 
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 1a</title>
+</head>
+
+<body>
+	<p>This is the first paragraph.</p>
+	<p>This is the second paragraph.</p>
+	<script>
+		const p = document.querySelector('p')
+		p.textContent = "Hello World!"
+	</script>
+</body>
+
+</html>
+
+<!--  
+01B 
+Use getElementById to select an element with the ID "myDiv" and change its background color to green.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 1b</title>
+</head>
+
+<body>
+	<div id="myDiv">
+		<p>This is a div with the ID "myDiv".</p>
+	</div>
+	<script>
+		document.getElementById('myDiv').style.backgroundColor = 'green'
+	</script>
+</body>
+
+</html>
+
+<!-- 
+02A
+Use getElementsByTagName to select all the images on a page and log their alt attributes to the console.
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 2a</title>
+</head>
+
+<body>
+	<img src="image1.jpg" alt="Image 1">
+	<img src="image2.jpg" alt="Image 2">
+	<img src="image3.jpg" alt="Image 3">
+	<script>
+		const images = document.getElementsByTagName("img")
+		for (let i = 0; i < images.length; i++) {
+			console.log(images[i].alt)
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- 
+02B 
+Use getElementsByClassName to select all the elements with the class "myClass" and change their font color to blue.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 2b</title>
+	<style>
+		.myClass {
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="myClass">This is a paragraph with the class "myClass".</p>
+	<p>This is another paragraph.</p>
+	<div class="myClass">This is a div with the class "myClass".</div>
+	<script>
+		const blueText = document.getElementsByClassName('myClass');
+		for (let i = 0; i < blueText.length; i++) {
+			blueText[i].style.color = 'blue'
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- 
+03A 
+Use querySelectorAll to select all the anchor elements on a page and log their href attributes to the console.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 3a</title>
+</head>
+
+<body>
+	<a href="https://www.google.com">Google</a>
+	<a href="https://www.facebook.com">Facebook</a>
+	<a href="https://www.twitter.com">Twitter</a>
+	<script>
+		const links = document.querySelectorAll('a');
+		for (let i = 0; i < links.length; i++) {
+			console.log(links[i].href);
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- 
+03B
+Use querySelectorAll to select all the elements with the class "myClass" and add the class "highlight" to them.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 3b</title>
+	<style>
+		.myClass {
+			color: black;
+		}
+
+		.highlight {
+			background-color: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="myClass">This is a paragraph with the class "myClass".</p>
+	<p>This is another paragraph.</p>
+	<div class="myClass">This is a div with the class "myClass".</div>
+	<script>
+		const classAdded = document.querySelectorAll('.myClass');
+		for (let i = 0; i < classAdded.length; i++) {
+			classAdded[i].classList.add('highlight');
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- 
+04A
+Use appendChild to add a new paragraph element to the end of a div element with the ID "myDiv".
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 4a</title>
+</head>
+
+<body>
+	<div id="myDiv">
+		<p>This is a div with the ID "myDiv".</p>
+	</div>
+	<script>
+		const myDiv = document.getElementById('myDiv')
+		const newParagraph = document.createElement('p');
+		myDiv.appendChild(newParagraph);
+		newParagraph.textContent = 'This is a new paragraph';
+		myDiv.appendChild(newParagraph)
+	</script>
+</body>
+
+</html>
+
+<!-- 
+04B
+Use innerHTML to replace the contents of a div element with the ID "myDiv" with the text "Hello World!".
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 4b</title>
+</head>
+
+<body>
+	<div id="myDiv">
+		<p>This is a div with the ID "myDiv".</p>
+	</div>
+	<script>
+		const myDiv = document.getElementById('myDiv')
+		myDiv.innerHTML = '<p>Hello World!</p>';
+	</script>
+</body>
+
+</html>
+
+<!-- 
+05A
+Use JavaScript to change the font size of an element with the ID "myElement" to 20px.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 5a</title>
+	<style>
+		#myElement {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="myElement">This is a paragraph with the ID "myElement".</p>
+	<script>
+		const newSize = document.getElementById('myElement')
+		newSize.style.fontSize = '20px';
+	</script>
+</body>
+
+</html>
+
+
+<!-- 
+05B
+Use JavaScript to change the border color of an element with the ID "myElement" to red.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 5b</title>
+	<style>
+		#myElement {
+			border: 2px solid black;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="myElement">This is a paragraph with the ID "myElement".</p>
+	<script>
+		const borderRed = document.getElementById('myElement');
+		borderRed.style.borderColor = "red";
+	</script>
+</body>
+
+</html>
+
+<!-- 
+06A
+Use toggle to toggle the visibility of an element with the ID "myElement" when a button is clicked.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 6a</title>
+	<style>
+		#myElement {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="myElement">This is a paragraph with the ID "myElement".</p>
+	<button oclick="toggleVisible()">Toggle visibility</button>
+	<script>
+		function toggleVisible() {
+			const element = document.getElementById('myElement')
+			myElement.classList.toggle('visible');
+		}
+	</script>
+</body>
+
+</html>
+
+<!-- 
+06B
+Use classList.add to add the class "highlight" to an element with the ID "myElement" when a button is clicked.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 6b</title>
+	<style>
+		#myElement {
+			background-color: yellow;
+		}
+
+		.highlight {
+			border: 2px solid red;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="myElement">This is a paragraph with the ID "myElement".</p>
+	<button onclick="clicked()">Add highlight</button>
+
+	<script>
+		function clicked() {
+			const elClicked = document.getElementById('myElement');
+			elClicked.classList.add('highlight');
+		}
+	</script>
+</body>
+
+</html>
+
+
+<!-- 
+06C
+Use classList.remove to remove the class "highlight" from an element with the ID "myElement" when a button is clicked.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 6c</title>
+	<style>
+		#myElement {
+			background-color: yellow;
+			border: 2px solid red;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="myElement">This is a paragraph with the ID "myElement".</p>
+	<button onclick="removeClick()">Remove highlight</button>
+	<script>
+		function removeClick() {
+			const removing = document.getElementById('myElement')
+			removing.classList.remove('highlight')
+		}
+	</script>
+</body>
+
+</html>
