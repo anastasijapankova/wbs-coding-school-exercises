@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    color: pink;
+    text-align: center;
+    font-size: 10vw;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
