@@ -1,0 +1,33 @@
+body {
+    background-color: #141c3a;
+    font-family: 'Nunito', sans-serif;
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 64px;
+}
+
+#fortune {
+    color: #EFBB24;
+    font-size: 24px;
+    text-align: center;
+}
+
+#buttonContainer {
+    width: fit-content;
+    margin: auto;
+}
+
+#fortuneButton {
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    border: 5px solid #D0104C;
+    border-radius: 5px;
+    color: #141c3a;
+    cursor: pointer;
+}
